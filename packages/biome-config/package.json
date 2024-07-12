@@ -1,7 +1,7 @@
 {
 	"name": "@armoteam/biome-config",
 	"version": "1.0.0",
-	"description": "Shared Biome.js configuration for mxt.im projects",
+	"description": "Shared Biome.js configuration for mxt.im projects test",
 	"main": "biome.json",
 	"type": "module",
 	"exports": {
