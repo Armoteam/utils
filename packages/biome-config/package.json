@@ -1,0 +1,28 @@
+{
+	"name": "@armoteam/biome-config",
+	"version": "1.0.0",
+	"description": "Shared Biome.js configuration for mxt.im projects",
+	"main": "biome.json",
+	"type": "module",
+	"exports": {
+		".": "./biome.json"
+	},
+	"scripts": {
+		"dry-format": "npx @biomejs/biome check --no-errors-on-unmatched --files-ignore-unknown=true",
+		"format": "npx @biomejs/biome check --no-errors-on-unmatched --files-ignore-unknown=true --write"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/armoteam/utils.git",
+		"directory": "packages/biome-config"
+	},
+	"author": "MXT",
+	"license": "ISC",
+	"peerDependencies": {
+		"@biomejs/biome": "1.8.3"
+	},
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com/",
+		"access": "public"
+	}
+}

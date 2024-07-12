@@ -1,0 +1,25 @@
+{
+	"name": "@armoteam/utils",
+	"private": true,
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"dry-format": "lerna run dry-format",
+		"format": "lerna run format",
+		"version:ci": "lerna version --yes --conventional-commits --create-release github --message 'chore(release): publish'",
+		"publish:ci": "lerna publish from-package --yes --no-verify-access"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/armoteam/utils.git"
+	},
+	"author": "MXT",
+	"license": "ISC",
+	"description": "",
+	"workspaces": ["packages/*"],
+	"devDependencies": {
+		"@biomejs/biome": "1.8.3",
+		"cz-conventional-changelog": "^3.3.0",
+		"lerna": "^8.1.6"
+	}
+}
