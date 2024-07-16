@@ -6,7 +6,7 @@
 	"scripts": {
 		"dry-format": "lerna run dry-format",
 		"format": "lerna run format",
-		"version:ci": "lerna version --yes --conventional-commits --create-release github --message 'chore(release): publish'",
+		"version:ci": "lerna version",
 		"publish:ci": "lerna publish from-package --yes --no-verify-access"
 	},
 	"repository": {

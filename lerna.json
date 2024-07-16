@@ -2,11 +2,15 @@
 	"packages": ["packages/*"],
 	"version": "independent",
 	"command": {
-		"version": {
+		"publish": {
 			"conventionalCommits": true,
 			"createRelease": "github",
 			"ignoreChanges": ["**/*.md"],
+			"yes": true
+		},
+		"version": {
 			"message": "chore(release): publish [skip ci]"
 		}
-	}
+	},
+	"$schema": "node_modules/lerna/schemas/lerna-schema.json"
 }
