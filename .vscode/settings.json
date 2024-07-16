@@ -10,6 +10,14 @@
 		"source.organizeImports.biome": "explicit",
 		"source.fixAll": "explicit"
 	},
+	"emeraldwalk.runonsave": {
+		"commands": [
+			{
+				"match": "\\.(ts|tsx|js|jsx|html)$",
+				"cmd": "npx biome lint \"${file}\" --apply-unsafe"
+			}
+		]
+	},
 	"editor.linkedEditing": true,
 	"files.eol": "\n"
 }
